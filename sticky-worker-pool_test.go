@@ -286,6 +286,8 @@ func TestStickyWorkerPool_Send(t *testing.T) {
 		}
 
 		// Assert
-		sut.Stop()
+		if err := sut.Stop(); err != nil {
+			t.Errorf("sut.Stop() error: %v", err)
+		}
 	})
 }
