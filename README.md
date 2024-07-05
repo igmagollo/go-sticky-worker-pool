@@ -1,4 +1,5 @@
 # go-sticky-worker-pool
+![Coverage](https://img.shields.io/badge/Coverage-94.2%25-brightgreen)
 
 This is a very simple implementation of key-sticky concurrency over go routines.
 
